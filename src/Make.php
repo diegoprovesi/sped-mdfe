@@ -1628,15 +1628,15 @@ class Make
             "Número da Apólice"
         );
         if ($std->nAver != null) {
-            foreach ($std->nAver as $nAver) {
+            /* foreach ($std->nAver as $nAver) { */
                 $this->dom->addChild(
                     $seg,
                     "nAver",
-                    $nAver,
+                    $std->nAver,
                     true,
                     "Número da Averbação"
                 );
-            }
+            /* } */
         }
         $this->seg[] = $seg;
         return $seg;
